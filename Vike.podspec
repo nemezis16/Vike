@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Vike"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "A library that gives you single sign to most popular analytics, like Flurry, Mixpanel, GoogleAnalytics, etc."
   s.homepage     = "https://github.com/nemezis16/Vike"
   s.license      = { :type => "MIT", :file => "LICENSE" }
