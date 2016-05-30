@@ -99,7 +99,7 @@ void CompleteHandledException(NSException *exception)
                                         @"reason" :  exception.reason,
                                     @"stacktrace" : [exception.userInfo objectForKey:UncaughtExceptionHandlerAddressesKey],
                                          @"fatal" : @1};
-    BOOL complete;
+    BOOL complete = NO;
     
     if (self.exceptionCallback) {
        self.exceptionCallback(exceptionDictionary, &complete);
