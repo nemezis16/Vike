@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A308EB1E1CFC021900DCFD91 /* VikeAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EAF91CFC021900DCFD91 /* VikeAnalytics.m */; };
+		A308EB1F1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EAFB1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m */; };
+		A308EB201CFC021900DCFD91 /* VikeIdentifyPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EAFE1CFC021900DCFD91 /* VikeIdentifyPayload.m */; };
+		A308EB211CFC021900DCFD91 /* VikeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB001CFC021900DCFD91 /* VikeIntegration.m */; };
+		A308EB221CFC021900DCFD91 /* VikeIntegrationApp.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB021CFC021900DCFD91 /* VikeIntegrationApp.m */; };
+		A308EB231CFC021900DCFD91 /* VikeIntegrationDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB041CFC021900DCFD91 /* VikeIntegrationDevice.m */; };
+		A308EB241CFC021900DCFD91 /* VikeIntegrationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB061CFC021900DCFD91 /* VikeIntegrationEvent.m */; };
+		A308EB251CFC021900DCFD91 /* VikeIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB081CFC021900DCFD91 /* VikeIntegrationFactory.m */; };
+		A308EB261CFC021900DCFD91 /* VikeIntegrationKinesis.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB0B1CFC021900DCFD91 /* VikeIntegrationKinesis.m */; };
+		A308EB271CFC021900DCFD91 /* VikeIntegrationOs.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB0D1CFC021900DCFD91 /* VikeIntegrationOs.m */; };
+		A308EB281CFC021900DCFD91 /* VikePayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB101CFC021900DCFD91 /* VikePayload.m */; };
+		A308EB291CFC021900DCFD91 /* VikeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB121CFC021900DCFD91 /* VikeRequest.m */; };
+		A308EB2A1CFC021900DCFD91 /* VikeScreenPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB141CFC021900DCFD91 /* VikeScreenPayload.m */; };
+		A308EB2B1CFC021900DCFD91 /* VikeTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB161CFC021900DCFD91 /* VikeTrackPayload.m */; };
+		A308EB2C1CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */; };
+		A308EB2D1CFC021900DCFD91 /* VikeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB1A1CFC021900DCFD91 /* VikeUtils.m */; };
+		A308EB2E1CFC021900DCFD91 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A308EB1B1CFC021900DCFD91 /* LICENSE */; };
+		A308EB2F1CFC021900DCFD91 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A308EB1C1CFC021900DCFD91 /* README.md */; };
+		A308EB301CFC021900DCFD91 /* Vike.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A308EB1D1CFC021900DCFD91 /* Vike.podspec */; };
+		A32D51821CF87D730077CF4C /* VikeTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F6510E1CF2F29000EFD494 /* VikeTestProjectTests.m */; };
+		A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */ = {isa = PBXBuildFile; fileRef = A390FC6B1CE9B53700FA0BB3 /* DummySession.m */; };
+		A3F244001CFAF88C00D6DA08 /* libAWSCognito.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C305D1CF879A5009AC9CC /* libAWSCognito.a */; };
+		A3F244011CFAF88C00D6DA08 /* libAWSCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C305E1CF879A5009AC9CC /* libAWSCore.a */; };
+		A3F244041CFAF88C00D6DA08 /* libAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F244021CFAF88C00D6DA08 /* libAnalytics.a */; };
+		A3F244051CFAF88C00D6DA08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F244031CFAF88C00D6DA08 /* libPods.a */; };
+		A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA41CD34FF000152A39 /* AppDelegate.m */; };
+		A3FEFEAE1CD34FF000152A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA61CD34FF000152A39 /* main.m */; };
+		A3FEFEAF1CD34FF000152A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FEFEA81CD34FF000152A39 /* Assets.xcassets */; };
+		A3FEFEB01CD34FF000152A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FEFEAA1CD34FF000152A39 /* LaunchScreen.storyboard */; };
+		A3FEFEB11CD34FF000152A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FEFEAB1CD34FF000152A39 /* Main.storyboard */; };
+		A3FEFEBA1CD350C900152A39 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEB91CD350C900152A39 /* LoginViewController.m */; };
+		A3FEFEBE1CD367F400152A39 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEBD1CD367F400152A39 /* NSString+Utils.m */; };
+		A3FEFEC51CD368D500152A39 /* FakeUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEC41CD368D500152A39 /* FakeUser.m */; };
+		A3FEFEC91CD385F000152A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEC81CD385F000152A39 /* DetailViewController.m */; };
+		A3FEFECD1CD38AE200152A39 /* SecondDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */; };
+		E257DBC89693CBFF4636A79A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CE1F6D5115625B8FF8EA61 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11CE1F6D5115625B8FF8EA61 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2780FB4B7DAF7A79E7FB3D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A308EAF81CFC021900DCFD91 /* VikeAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeAnalytics.h; sourceTree = "<group>"; };
+		A308EAF91CFC021900DCFD91 /* VikeAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeAnalytics.m; sourceTree = "<group>"; };
+		A308EAFA1CFC021900DCFD91 /* VikeAnalyticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		A308EAFB1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		A308EAFC1CFC021900DCFD91 /* VikeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeConstants.h; sourceTree = "<group>"; };
+		A308EAFD1CFC021900DCFD91 /* VikeIdentifyPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIdentifyPayload.h; sourceTree = "<group>"; };
+		A308EAFE1CFC021900DCFD91 /* VikeIdentifyPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIdentifyPayload.m; sourceTree = "<group>"; };
+		A308EAFF1CFC021900DCFD91 /* VikeIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegration.h; sourceTree = "<group>"; };
+		A308EB001CFC021900DCFD91 /* VikeIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegration.m; sourceTree = "<group>"; };
+		A308EB011CFC021900DCFD91 /* VikeIntegrationApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationApp.h; sourceTree = "<group>"; };
+		A308EB021CFC021900DCFD91 /* VikeIntegrationApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationApp.m; sourceTree = "<group>"; };
+		A308EB031CFC021900DCFD91 /* VikeIntegrationDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationDevice.h; sourceTree = "<group>"; };
+		A308EB041CFC021900DCFD91 /* VikeIntegrationDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationDevice.m; sourceTree = "<group>"; };
+		A308EB051CFC021900DCFD91 /* VikeIntegrationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationEvent.h; sourceTree = "<group>"; };
+		A308EB061CFC021900DCFD91 /* VikeIntegrationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationEvent.m; sourceTree = "<group>"; };
+		A308EB071CFC021900DCFD91 /* VikeIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationFactory.h; sourceTree = "<group>"; };
+		A308EB081CFC021900DCFD91 /* VikeIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationFactory.m; sourceTree = "<group>"; };
+		A308EB091CFC021900DCFD91 /* VikeIntegrationFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationFactoryProtocol.h; sourceTree = "<group>"; };
+		A308EB0A1CFC021900DCFD91 /* VikeIntegrationKinesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationKinesis.h; sourceTree = "<group>"; };
+		A308EB0B1CFC021900DCFD91 /* VikeIntegrationKinesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationKinesis.m; sourceTree = "<group>"; };
+		A308EB0C1CFC021900DCFD91 /* VikeIntegrationOs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationOs.h; sourceTree = "<group>"; };
+		A308EB0D1CFC021900DCFD91 /* VikeIntegrationOs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeIntegrationOs.m; sourceTree = "<group>"; };
+		A308EB0E1CFC021900DCFD91 /* VikeIntegrationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeIntegrationProtocol.h; sourceTree = "<group>"; };
+		A308EB0F1CFC021900DCFD91 /* VikePayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikePayload.h; sourceTree = "<group>"; };
+		A308EB101CFC021900DCFD91 /* VikePayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikePayload.m; sourceTree = "<group>"; };
+		A308EB111CFC021900DCFD91 /* VikeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeRequest.h; sourceTree = "<group>"; };
+		A308EB121CFC021900DCFD91 /* VikeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeRequest.m; sourceTree = "<group>"; };
+		A308EB131CFC021900DCFD91 /* VikeScreenPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeScreenPayload.h; sourceTree = "<group>"; };
+		A308EB141CFC021900DCFD91 /* VikeScreenPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeScreenPayload.m; sourceTree = "<group>"; };
+		A308EB151CFC021900DCFD91 /* VikeTrackPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeTrackPayload.h; sourceTree = "<group>"; };
+		A308EB161CFC021900DCFD91 /* VikeTrackPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeTrackPayload.m; sourceTree = "<group>"; };
+		A308EB171CFC021900DCFD91 /* VikeUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		A308EB191CFC021900DCFD91 /* VikeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeUtils.h; sourceTree = "<group>"; };
+		A308EB1A1CFC021900DCFD91 /* VikeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeUtils.m; sourceTree = "<group>"; };
+		A308EB1B1CFC021900DCFD91 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A308EB1C1CFC021900DCFD91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A308EB1D1CFC021900DCFD91 /* Vike.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vike.podspec; sourceTree = "<group>"; };
+		A38C305D1CF879A5009AC9CC /* libAWSCognito.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCognito.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSCognito.a"; sourceTree = "<group>"; };
+		A38C305E1CF879A5009AC9CC /* libAWSCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSCore.a"; sourceTree = "<group>"; };
+		A38C305F1CF879A5009AC9CC /* libAWSKinesis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSKinesis.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSKinesis.a"; sourceTree = "<group>"; };
+		A390FC6A1CE9B53700FA0BB3 /* DummySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummySession.h; path = Classes/DummySession/DummySession.h; sourceTree = "<group>"; };
+		A390FC6B1CE9B53700FA0BB3 /* DummySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummySession.m; path = Classes/DummySession/DummySession.m; sourceTree = "<group>"; };
+		A3F244021CFAF88C00D6DA08 /* libAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAnalytics.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAnalytics.a"; sourceTree = "<group>"; };
+		A3F244031CFAF88C00D6DA08 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
+		A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VikeTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F6510E1CF2F29000EFD494 /* VikeTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VikeTestProjectTests.m; sourceTree = "<group>"; };
+		A3F651101CF2F29000EFD494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FEFE861CD34E8F00152A39 /* VikeTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VikeTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FEFEA31CD34FF000152A39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3FEFEA41CD34FF000152A39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3FEFEA51CD34FF000152A39 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FEFEA61CD34FF000152A39 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3FEFEA81CD34FF000152A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3FEFEAA1CD34FF000152A39 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3FEFEAB1CD34FF000152A39 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A3FEFEB81CD350C900152A39 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/ViewControllers/LoginViewController/LoginViewController.h; sourceTree = "<group>"; };
+		A3FEFEB91CD350C900152A39 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/ViewControllers/LoginViewController/LoginViewController.m; sourceTree = "<group>"; };
+		A3FEFEBC1CD367F400152A39 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utils.h"; path = "Categories/NSString+Utils/NSString+Utils.h"; sourceTree = "<group>"; };
+		A3FEFEBD1CD367F400152A39 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utils.m"; path = "Categories/NSString+Utils/NSString+Utils.m"; sourceTree = "<group>"; };
+		A3FEFEC31CD368D500152A39 /* FakeUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeUser.h; path = Classes/Models/FakeUser/FakeUser.h; sourceTree = "<group>"; };
+		A3FEFEC41CD368D500152A39 /* FakeUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeUser.m; path = Classes/Models/FakeUser/FakeUser.m; sourceTree = "<group>"; };
+		A3FEFEC71CD385F000152A39 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Classes/ViewControllers/DetailViewController/DetailViewController.h; sourceTree = "<group>"; };
+		A3FEFEC81CD385F000152A39 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Classes/ViewControllers/DetailViewController/DetailViewController.m; sourceTree = "<group>"; };
+		A3FEFECB1CD38AE200152A39 /* SecondDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondDetailViewController.h; path = Classes/ViewControllers/SecondDetailViewController/SecondDetailViewController.h; sourceTree = "<group>"; };
+		A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondDetailViewController.m; path = Classes/ViewControllers/SecondDetailViewController/SecondDetailViewController.m; sourceTree = "<group>"; };
+		F65B5428E52F3C40C5768AC4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3F651091CF2F29000EFD494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F244041CFAF88C00D6DA08 /* libAnalytics.a in Frameworks */,
+				A3F244051CFAF88C00D6DA08 /* libPods.a in Frameworks */,
+				A3F244001CFAF88C00D6DA08 /* libAWSCognito.a in Frameworks */,
+				A3F244011CFAF88C00D6DA08 /* libAWSCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FEFE831CD34E8F00152A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E257DBC89693CBFF4636A79A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A308EAF61CFC021900DCFD91 /* Vike */ = {
+			isa = PBXGroup;
+			children = (
+				A308EAF71CFC021900DCFD91 /* Classes */,
+				A308EB1B1CFC021900DCFD91 /* LICENSE */,
+				A308EB1C1CFC021900DCFD91 /* README.md */,
+				A308EB1D1CFC021900DCFD91 /* Vike.podspec */,
+			);
+			name = Vike;
+			path = VikeTestProject/Vike;
+			sourceTree = "<group>";
+		};
+		A308EAF71CFC021900DCFD91 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A308EAF81CFC021900DCFD91 /* VikeAnalytics.h */,
+				A308EAF91CFC021900DCFD91 /* VikeAnalytics.m */,
+				A308EAFA1CFC021900DCFD91 /* VikeAnalyticsConfiguration.h */,
+				A308EAFB1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m */,
+				A308EAFC1CFC021900DCFD91 /* VikeConstants.h */,
+				A308EAFD1CFC021900DCFD91 /* VikeIdentifyPayload.h */,
+				A308EAFE1CFC021900DCFD91 /* VikeIdentifyPayload.m */,
+				A308EAFF1CFC021900DCFD91 /* VikeIntegration.h */,
+				A308EB001CFC021900DCFD91 /* VikeIntegration.m */,
+				A308EB011CFC021900DCFD91 /* VikeIntegrationApp.h */,
+				A308EB021CFC021900DCFD91 /* VikeIntegrationApp.m */,
+				A308EB031CFC021900DCFD91 /* VikeIntegrationDevice.h */,
+				A308EB041CFC021900DCFD91 /* VikeIntegrationDevice.m */,
+				A308EB051CFC021900DCFD91 /* VikeIntegrationEvent.h */,
+				A308EB061CFC021900DCFD91 /* VikeIntegrationEvent.m */,
+				A308EB071CFC021900DCFD91 /* VikeIntegrationFactory.h */,
+				A308EB081CFC021900DCFD91 /* VikeIntegrationFactory.m */,
+				A308EB091CFC021900DCFD91 /* VikeIntegrationFactoryProtocol.h */,
+				A308EB0A1CFC021900DCFD91 /* VikeIntegrationKinesis.h */,
+				A308EB0B1CFC021900DCFD91 /* VikeIntegrationKinesis.m */,
+				A308EB0C1CFC021900DCFD91 /* VikeIntegrationOs.h */,
+				A308EB0D1CFC021900DCFD91 /* VikeIntegrationOs.m */,
+				A308EB0E1CFC021900DCFD91 /* VikeIntegrationProtocol.h */,
+				A308EB0F1CFC021900DCFD91 /* VikePayload.h */,
+				A308EB101CFC021900DCFD91 /* VikePayload.m */,
+				A308EB111CFC021900DCFD91 /* VikeRequest.h */,
+				A308EB121CFC021900DCFD91 /* VikeRequest.m */,
+				A308EB131CFC021900DCFD91 /* VikeScreenPayload.h */,
+				A308EB141CFC021900DCFD91 /* VikeScreenPayload.m */,
+				A308EB151CFC021900DCFD91 /* VikeTrackPayload.h */,
+				A308EB161CFC021900DCFD91 /* VikeTrackPayload.m */,
+				A308EB171CFC021900DCFD91 /* VikeUncaughtExceptionHandler.h */,
+				A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */,
+				A308EB191CFC021900DCFD91 /* VikeUtils.h */,
+				A308EB1A1CFC021900DCFD91 /* VikeUtils.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A390FC691CE9B50C00FA0BB3 /* DummySession */ = {
+			isa = PBXGroup;
+			children = (
+				A390FC6A1CE9B53700FA0BB3 /* DummySession.h */,
+				A390FC6B1CE9B53700FA0BB3 /* DummySession.m */,
+			);
+			name = DummySession;
+			sourceTree = "<group>";
+		};
+		A3F6510D1CF2F29000EFD494 /* VikeTestProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F6510E1CF2F29000EFD494 /* VikeTestProjectTests.m */,
+				A3F651101CF2F29000EFD494 /* Info.plist */,
+			);
+			path = VikeTestProjectTests;
+			sourceTree = "<group>";
+		};
+		A3FEFE7D1CD34E8F00152A39 = {
+			isa = PBXGroup;
+			children = (
+				A3FEFE881CD34E8F00152A39 /* VikeTestProject */,
+				D49ABC1A8263C1D2A40C4F28 /* Pods */,
+				A3F6510D1CF2F29000EFD494 /* VikeTestProjectTests */,
+				D470D1FC220F838E5DA67255 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FEFE871CD34E8F00152A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFE861CD34E8F00152A39 /* VikeTestProject.app */,
+				A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A3FEFE881CD34E8F00152A39 /* VikeTestProject */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEBB1CD3676900152A39 /* Categories */,
+				A3FEFEB21CD34FF400152A39 /* Classes */,
+				A3FEFEA11CD34FF000152A39 /* Application */,
+				A3FEFEA71CD34FF000152A39 /* Resources */,
+				A3FEFE871CD34E8F00152A39 /* Products */,
+			);
+			path = VikeTestProject;
+			sourceTree = "<group>";
+		};
+		A3FEFEA11CD34FF000152A39 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEA21CD34FF000152A39 /* AppDelegate */,
+				A3FEFEA51CD34FF000152A39 /* Info.plist */,
+				A3FEFEA61CD34FF000152A39 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A3FEFEA21CD34FF000152A39 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEA31CD34FF000152A39 /* AppDelegate.h */,
+				A3FEFEA41CD34FF000152A39 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A3FEFEA71CD34FF000152A39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEA81CD34FF000152A39 /* Assets.xcassets */,
+				A3FEFEA91CD34FF000152A39 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3FEFEA91CD34FF000152A39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEAA1CD34FF000152A39 /* LaunchScreen.storyboard */,
+				A3FEFEAB1CD34FF000152A39 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A3FEFEB21CD34FF400152A39 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A390FC691CE9B50C00FA0BB3 /* DummySession */,
+				A3FEFEC01CD3686B00152A39 /* Models */,
+				A3FEFEB51CD3501300152A39 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A3FEFEB51CD3501300152A39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFECA1CD38AC200152A39 /* SecondDetailViewController */,
+				A3FEFEC61CD385BD00152A39 /* DetailViewController */,
+				A3FEFEB71CD3509A00152A39 /* LoginViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3FEFEB71CD3509A00152A39 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEB81CD350C900152A39 /* LoginViewController.h */,
+				A3FEFEB91CD350C900152A39 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		A3FEFEBB1CD3676900152A39 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEBF1CD3682000152A39 /* NSString+Utils */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A3FEFEBF1CD3682000152A39 /* NSString+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEBC1CD367F400152A39 /* NSString+Utils.h */,
+				A3FEFEBD1CD367F400152A39 /* NSString+Utils.m */,
+			);
+			name = "NSString+Utils";
+			sourceTree = "<group>";
+		};
+		A3FEFEC01CD3686B00152A39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEC11CD3687400152A39 /* FakeUser */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A3FEFEC11CD3687400152A39 /* FakeUser */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEC31CD368D500152A39 /* FakeUser.h */,
+				A3FEFEC41CD368D500152A39 /* FakeUser.m */,
+			);
+			name = FakeUser;
+			sourceTree = "<group>";
+		};
+		A3FEFEC61CD385BD00152A39 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFEC71CD385F000152A39 /* DetailViewController.h */,
+				A3FEFEC81CD385F000152A39 /* DetailViewController.m */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
+		A3FEFECA1CD38AC200152A39 /* SecondDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEFECB1CD38AE200152A39 /* SecondDetailViewController.h */,
+				A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */,
+			);
+			name = SecondDetailViewController;
+			sourceTree = "<group>";
+		};
+		D470D1FC220F838E5DA67255 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A308EAF61CFC021900DCFD91 /* Vike */,
+				A3F244021CFAF88C00D6DA08 /* libAnalytics.a */,
+				A3F244031CFAF88C00D6DA08 /* libPods.a */,
+				A38C305D1CF879A5009AC9CC /* libAWSCognito.a */,
+				A38C305E1CF879A5009AC9CC /* libAWSCore.a */,
+				A38C305F1CF879A5009AC9CC /* libAWSKinesis.a */,
+				11CE1F6D5115625B8FF8EA61 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D49ABC1A8263C1D2A40C4F28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2780FB4B7DAF7A79E7FB3D0 /* Pods.debug.xcconfig */,
+				F65B5428E52F3C40C5768AC4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3F6510B1CF2F29000EFD494 /* VikeTestProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F651131CF2F29000EFD494 /* Build configuration list for PBXNativeTarget "VikeTestProjectTests" */;
+			buildPhases = (
+				A3F651081CF2F29000EFD494 /* Sources */,
+				A3F651091CF2F29000EFD494 /* Frameworks */,
+				A3F6510A1CF2F29000EFD494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VikeTestProjectTests;
+			productName = VikeTestProjectTests;
+			productReference = A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3FEFE851CD34E8F00152A39 /* VikeTestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FEFE9D1CD34E8F00152A39 /* Build configuration list for PBXNativeTarget "VikeTestProject" */;
+			buildPhases = (
+				63BA50CD8F5222E85B47F4AD /* Check Pods Manifest.lock */,
+				A3FEFE821CD34E8F00152A39 /* Sources */,
+				A3FEFE831CD34E8F00152A39 /* Frameworks */,
+				A3FEFE841CD34E8F00152A39 /* Resources */,
+				3D3D2597320B344CBE2D8B01 /* Embed Pods Frameworks */,
+				6D6E411A9728000406BE896D /* Copy Pods Resources */,
+				A3A100521CEEE9B5005CE878 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VikeTestProject;
+			productName = VikeTestProject;
+			productReference = A3FEFE861CD34E8F00152A39 /* VikeTestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FEFE7E1CD34E8F00152A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roman Osadchuk";
+				TargetAttributes = {
+					A3F6510B1CF2F29000EFD494 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 62329HPVX9;
+						TestTargetID = A3FEFE851CD34E8F00152A39;
+					};
+					A3FEFE851CD34E8F00152A39 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 62329HPVX9;
+					};
+				};
+			};
+			buildConfigurationList = A3FEFE811CD34E8F00152A39 /* Build configuration list for PBXProject "VikeTestProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3FEFE7D1CD34E8F00152A39;
+			productRefGroup = A3FEFE871CD34E8F00152A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FEFE851CD34E8F00152A39 /* VikeTestProject */,
+				A3F6510B1CF2F29000EFD494 /* VikeTestProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3F6510A1CF2F29000EFD494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FEFE841CD34E8F00152A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FEFEB01CD34FF000152A39 /* LaunchScreen.storyboard in Resources */,
+				A3FEFEAF1CD34FF000152A39 /* Assets.xcassets in Resources */,
+				A308EB2E1CFC021900DCFD91 /* LICENSE in Resources */,
+				A308EB301CFC021900DCFD91 /* Vike.podspec in Resources */,
+				A3FEFEB11CD34FF000152A39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D3D2597320B344CBE2D8B01 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63BA50CD8F5222E85B47F4AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6E411A9728000406BE896D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A100521CEEE9B5005CE878 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8495bec6bf0ac18a2a17840c6998ad12be124a22 4a981980ace76535d1279cbf390ad9d7785f2a95518b7e700470dacd197a6fef";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3F651081CF2F29000EFD494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D51821CF87D730077CF4C /* VikeTestProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FEFE821CD34E8F00152A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A308EB2A1CFC021900DCFD91 /* VikeScreenPayload.m in Sources */,
+				A308EB291CFC021900DCFD91 /* VikeRequest.m in Sources */,
+				A3FEFEAE1CD34FF000152A39 /* main.m in Sources */,
+				A308EB241CFC021900DCFD91 /* VikeIntegrationEvent.m in Sources */,
+				A308EB231CFC021900DCFD91 /* VikeIntegrationDevice.m in Sources */,
+				A3FEFEC51CD368D500152A39 /* FakeUser.m in Sources */,
+				A308EB1F1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m in Sources */,
+				A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */,
+				A3FEFEBA1CD350C900152A39 /* LoginViewController.m in Sources */,
+				A308EB271CFC021900DCFD91 /* VikeIntegrationOs.m in Sources */,
+				A308EB201CFC021900DCFD91 /* VikeIdentifyPayload.m in Sources */,
+				A3FEFEBE1CD367F400152A39 /* NSString+Utils.m in Sources */,
+				A308EB2F1CFC021900DCFD91 /* README.md in Sources */,
+				A308EB261CFC021900DCFD91 /* VikeIntegrationKinesis.m in Sources */,
+				A308EB211CFC021900DCFD91 /* VikeIntegration.m in Sources */,
+				A308EB281CFC021900DCFD91 /* VikePayload.m in Sources */,
+				A308EB1E1CFC021900DCFD91 /* VikeAnalytics.m in Sources */,
+				A3FEFECD1CD38AE200152A39 /* SecondDetailViewController.m in Sources */,
+				A308EB2C1CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m in Sources */,
+				A3FEFEC91CD385F000152A39 /* DetailViewController.m in Sources */,
+				A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */,
+				A308EB251CFC021900DCFD91 /* VikeIntegrationFactory.m in Sources */,
+				A308EB221CFC021900DCFD91 /* VikeIntegrationApp.m in Sources */,
+				A308EB2D1CFC021900DCFD91 /* VikeUtils.m in Sources */,
+				A308EB2B1CFC021900DCFD91 /* VikeTrackPayload.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A3F651141CF2F29000EFD494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VikeTestProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VikeTestProject.app/VikeTestProject";
+			};
+			name = Debug;
+		};
+		A3F651151CF2F29000EFD494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VikeTestProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VikeTestProject.app/VikeTestProject";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FEFE9B1CD34E8F00152A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		A3FEFE9C1CD34E8F00152A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		A3FEFE9E1CD34E8F00152A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2780FB4B7DAF7A79E7FB3D0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A3FEFE9F1CD34E8F00152A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65B5428E52F3C40C5768AC4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3F651131CF2F29000EFD494 /* Build configuration list for PBXNativeTarget "VikeTestProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F651141CF2F29000EFD494 /* Debug */,
+				A3F651151CF2F29000EFD494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FEFE811CD34E8F00152A39 /* Build configuration list for PBXProject "VikeTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FEFE9B1CD34E8F00152A39 /* Debug */,
+				A3FEFE9C1CD34E8F00152A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FEFE9D1CD34E8F00152A39 /* Build configuration list for PBXNativeTarget "VikeTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FEFE9E1CD34E8F00152A39 /* Debug */,
+				A3FEFE9F1CD34E8F00152A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FEFE7E1CD34E8F00152A39 /* Project object */;
+}
