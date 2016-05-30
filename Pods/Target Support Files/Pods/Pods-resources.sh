@@ -75,7 +75,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "Mixpanel/Mixpanel/MPNotification~iphonelandscape.storyboard"
   install_resource "Mixpanel/Mixpanel/MPNotification~iphoneportrait.storyboard"
   install_resource "Mixpanel/Mixpanel/MPSurvey.storyboard"
-  install_resource "${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "Mixpanel/Mixpanel/Images/MPArrowLeft.png"
@@ -95,7 +94,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "Mixpanel/Mixpanel/MPNotification~iphonelandscape.storyboard"
   install_resource "Mixpanel/Mixpanel/MPNotification~iphoneportrait.storyboard"
   install_resource "Mixpanel/Mixpanel/MPSurvey.storyboard"
-  install_resource "${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
