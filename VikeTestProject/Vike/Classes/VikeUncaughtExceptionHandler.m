@@ -60,7 +60,7 @@ void CompleteHandledException(NSException *exception)
                                           @"name" : exception.name,
                                           @"stacktrace" : stacktraceString,
                                           @"fatal" : @1};
-    BOOL complete;
+    BOOL complete = NO;
     
     if (selfRef.exceptionCallback) {
         selfRef.exceptionCallback(exceptionDictionary, &complete);
