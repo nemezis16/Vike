@@ -23,9 +23,9 @@
 		A308EB2B1CFC021900DCFD91 /* VikeTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB161CFC021900DCFD91 /* VikeTrackPayload.m */; };
 		A308EB2C1CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */; };
 		A308EB2D1CFC021900DCFD91 /* VikeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A308EB1A1CFC021900DCFD91 /* VikeUtils.m */; };
-		A308EB2E1CFC021900DCFD91 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A308EB1B1CFC021900DCFD91 /* LICENSE */; };
-		A308EB2F1CFC021900DCFD91 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A308EB1C1CFC021900DCFD91 /* README.md */; };
-		A308EB301CFC021900DCFD91 /* Vike.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A308EB1D1CFC021900DCFD91 /* Vike.podspec */; };
+		A308EBA01CFC4FC800DCFD91 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A308EB9D1CFC4FC800DCFD91 /* LICENSE */; };
+		A308EBA11CFC4FC800DCFD91 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A308EB9E1CFC4FC800DCFD91 /* README.md */; };
+		A308EBA21CFC4FC800DCFD91 /* Vike.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A308EB9F1CFC4FC800DCFD91 /* Vike.podspec */; };
 		A32D51821CF87D730077CF4C /* VikeTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F6510E1CF2F29000EFD494 /* VikeTestProjectTests.m */; };
 		A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */ = {isa = PBXBuildFile; fileRef = A390FC6B1CE9B53700FA0BB3 /* DummySession.m */; };
 		A3F244001CFAF88C00D6DA08 /* libAWSCognito.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C305D1CF879A5009AC9CC /* libAWSCognito.a */; };
@@ -83,9 +83,9 @@
 		A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		A308EB191CFC021900DCFD91 /* VikeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeUtils.h; sourceTree = "<group>"; };
 		A308EB1A1CFC021900DCFD91 /* VikeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeUtils.m; sourceTree = "<group>"; };
-		A308EB1B1CFC021900DCFD91 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A308EB1C1CFC021900DCFD91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A308EB1D1CFC021900DCFD91 /* Vike.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vike.podspec; sourceTree = "<group>"; };
+		A308EB9D1CFC4FC800DCFD91 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A308EB9E1CFC4FC800DCFD91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A308EB9F1CFC4FC800DCFD91 /* Vike.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vike.podspec; sourceTree = "<group>"; };
 		A38C305D1CF879A5009AC9CC /* libAWSCognito.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCognito.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSCognito.a"; sourceTree = "<group>"; };
 		A38C305E1CF879A5009AC9CC /* libAWSCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSCore.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSCore.a"; sourceTree = "<group>"; };
 		A38C305F1CF879A5009AC9CC /* libAWSKinesis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAWSKinesis.a; path = "../../../Library/Developer/Xcode/DerivedData/VikeTestProject-fbgajmcfpgrudihhwuutxmtlwlui/Build/Products/Debug-iphonesimulator/libAWSKinesis.a"; sourceTree = "<group>"; };
@@ -144,9 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				A308EAF71CFC021900DCFD91 /* Classes */,
-				A308EB1B1CFC021900DCFD91 /* LICENSE */,
-				A308EB1C1CFC021900DCFD91 /* README.md */,
-				A308EB1D1CFC021900DCFD91 /* Vike.podspec */,
 			);
 			name = Vike;
 			path = VikeTestProject/Vike;
@@ -190,6 +187,9 @@
 				A308EB181CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m */,
 				A308EB191CFC021900DCFD91 /* VikeUtils.h */,
 				A308EB1A1CFC021900DCFD91 /* VikeUtils.m */,
+				A308EB9D1CFC4FC800DCFD91 /* LICENSE */,
+				A308EB9E1CFC4FC800DCFD91 /* README.md */,
+				A308EB9F1CFC4FC800DCFD91 /* Vike.podspec */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -479,8 +479,8 @@
 			files = (
 				A3FEFEB01CD34FF000152A39 /* LaunchScreen.storyboard in Resources */,
 				A3FEFEAF1CD34FF000152A39 /* Assets.xcassets in Resources */,
-				A308EB2E1CFC021900DCFD91 /* LICENSE in Resources */,
-				A308EB301CFC021900DCFD91 /* Vike.podspec in Resources */,
+				A308EBA01CFC4FC800DCFD91 /* LICENSE in Resources */,
+				A308EBA21CFC4FC800DCFD91 /* Vike.podspec in Resources */,
 				A3FEFEB11CD34FF000152A39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,7 +573,7 @@
 				A308EB271CFC021900DCFD91 /* VikeIntegrationOs.m in Sources */,
 				A308EB201CFC021900DCFD91 /* VikeIdentifyPayload.m in Sources */,
 				A3FEFEBE1CD367F400152A39 /* NSString+Utils.m in Sources */,
-				A308EB2F1CFC021900DCFD91 /* README.md in Sources */,
+				A308EBA11CFC4FC800DCFD91 /* README.md in Sources */,
 				A308EB261CFC021900DCFD91 /* VikeIntegrationKinesis.m in Sources */,
 				A308EB211CFC021900DCFD91 /* VikeIntegration.m in Sources */,
 				A308EB281CFC021900DCFD91 /* VikePayload.m in Sources */,

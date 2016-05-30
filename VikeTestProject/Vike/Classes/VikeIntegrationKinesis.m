@@ -10,7 +10,7 @@
 
 #import "VikeUtils.h"
 
-#import <AWSCognito.h>
+#import <AWSCognito/AWSCognito.h>
 #import <AWSKinesis/AWSKinesis.h>
 
 #import "VikeConstants.h"
