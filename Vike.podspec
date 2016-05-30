@@ -11,5 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/nemezis16/Vike.git", :tag => "0.1.2" }
   s.source_files  = "Classes/*.{h,m}"
   s.requires_arc = true
+  s.dependency 'AWSCore'
+  s.dependency 'AWSCognito'
+  s.dependency 'AWSKinesis'
 
 end
