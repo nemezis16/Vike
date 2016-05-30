@@ -12,7 +12,7 @@ s.source_files  = "VikeFlurry/*.{h,m}"
 s.requires_arc = true
 
 s.subspec "Flurry" do |ss|
-ss.dependency 'Flurry' '~> 7.6.3'
+ss.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.1.0'
 end
 
 end
