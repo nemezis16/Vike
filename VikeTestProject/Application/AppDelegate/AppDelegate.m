@@ -13,10 +13,10 @@
 
 #import "VikeAnalytics.h"
 #import "VikeAnalyticsConfiguration.h"
-//#import "VikeFlurryIntegrationFactory.h"
-//#import "VikeMixpanelIntegrationFactory.h"
-//#import "VikeGoogleAnalyticsIntegrationFactory.h"
-//#import "VikeCrashlyticsIntegrationFactory.h"
+#import "VikeFlurryIntegrationFactory.h"
+#import "VikeMixpanelIntegrationFactory.h"
+#import "VikeGoogleAnalyticsIntegrationFactory.h"
+#import "VikeCrashlyticsIntegrationFactory.h"
 
 static NSString *const ProjectIDString = @"346f23a2740818ecc9f91";
 
@@ -26,10 +26,10 @@ static NSString *const ProjectIDString = @"346f23a2740818ecc9f91";
 {
     VikeAnalyticsConfiguration *configuration = [VikeAnalyticsConfiguration configurationWithWriteKey:ProjectIDString];
     
-//    [configuration use:[VikeFlurryIntegrationFactory instance]];
-//    [configuration use:[VikeMixpanelIntegrationFactory instance]];
-//    [configuration use:[VikeGoogleAnalyticsIntegrationFactory instance]];
-//    [configuration use:[VikeCrashlyticsIntegrationFactory instance]];
+    [configuration use:[VikeFlurryIntegrationFactory instance]];
+    [configuration use:[VikeMixpanelIntegrationFactory instance]];
+    [configuration use:[VikeGoogleAnalyticsIntegrationFactory instance]];
+    [configuration use:[VikeCrashlyticsIntegrationFactory instance]];
     
     [VikeAnalytics setupWithConfiguration:configuration];
 

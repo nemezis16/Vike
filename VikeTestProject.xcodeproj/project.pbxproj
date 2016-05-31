@@ -44,6 +44,7 @@
 		A364417E1CFC8A63006378C6 /* VikeGoogleAnalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441731CFC8A63006378C6 /* VikeGoogleAnalyticsIntegrationFactory.m */; };
 		A364417F1CFC8A63006378C6 /* VikeMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441761CFC8A63006378C6 /* VikeMixpanelIntegration.m */; };
 		A36441801CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441781CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m */; };
+		A36441A61CFD84F7006378C6 /* EventCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441A51CFD84F7006378C6 /* EventCountModel.m */; };
 		A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */ = {isa = PBXBuildFile; fileRef = A390FC6B1CE9B53700FA0BB3 /* DummySession.m */; };
 		A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA41CD34FF000152A39 /* AppDelegate.m */; };
 		A3FEFEAE1CD34FF000152A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA61CD34FF000152A39 /* main.m */; };
@@ -54,7 +55,6 @@
 		A3FEFEBE1CD367F400152A39 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEBD1CD367F400152A39 /* NSString+Utils.m */; };
 		A3FEFEC51CD368D500152A39 /* FakeUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEC41CD368D500152A39 /* FakeUser.m */; };
 		A3FEFEC91CD385F000152A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEC81CD385F000152A39 /* DetailViewController.m */; };
-		A3FEFECD1CD38AE200152A39 /* SecondDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +124,8 @@
 		A36441761CFC8A63006378C6 /* VikeMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeMixpanelIntegration.m; sourceTree = "<group>"; };
 		A36441771CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeMixpanelIntegrationFactory.h; sourceTree = "<group>"; };
 		A36441781CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeMixpanelIntegrationFactory.m; sourceTree = "<group>"; };
+		A36441A41CFD84F7006378C6 /* EventCountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCountModel.h; path = Classes/Models/EventCountModel/EventCountModel.h; sourceTree = "<group>"; };
+		A36441A51CFD84F7006378C6 /* EventCountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCountModel.m; path = Classes/Models/EventCountModel/EventCountModel.m; sourceTree = "<group>"; };
 		A390FC6A1CE9B53700FA0BB3 /* DummySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummySession.h; path = Classes/DummySession/DummySession.h; sourceTree = "<group>"; };
 		A390FC6B1CE9B53700FA0BB3 /* DummySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummySession.m; path = Classes/DummySession/DummySession.m; sourceTree = "<group>"; };
 		A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VikeTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,8 +147,6 @@
 		A3FEFEC41CD368D500152A39 /* FakeUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeUser.m; path = Classes/Models/FakeUser/FakeUser.m; sourceTree = "<group>"; };
 		A3FEFEC71CD385F000152A39 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Classes/ViewControllers/DetailViewController/DetailViewController.h; sourceTree = "<group>"; };
 		A3FEFEC81CD385F000152A39 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Classes/ViewControllers/DetailViewController/DetailViewController.m; sourceTree = "<group>"; };
-		A3FEFECB1CD38AE200152A39 /* SecondDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondDetailViewController.h; path = Classes/ViewControllers/SecondDetailViewController/SecondDetailViewController.h; sourceTree = "<group>"; };
-		A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondDetailViewController.m; path = Classes/ViewControllers/SecondDetailViewController/SecondDetailViewController.m; sourceTree = "<group>"; };
 		F65B5428E52F3C40C5768AC4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +285,15 @@
 			path = ../../VikeMixpanel;
 			sourceTree = "<group>";
 		};
+		A36441A71CFD861A006378C6 /* EventCountModel */ = {
+			isa = PBXGroup;
+			children = (
+				A36441A41CFD84F7006378C6 /* EventCountModel.h */,
+				A36441A51CFD84F7006378C6 /* EventCountModel.m */,
+			);
+			name = EventCountModel;
+			sourceTree = "<group>";
+		};
 		A390FC691CE9B50C00FA0BB3 /* DummySession */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,7 +395,6 @@
 		A3FEFEB51CD3501300152A39 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A3FEFECA1CD38AC200152A39 /* SecondDetailViewController */,
 				A3FEFEC61CD385BD00152A39 /* DetailViewController */,
 				A3FEFEB71CD3509A00152A39 /* LoginViewController */,
 			);
@@ -422,6 +430,7 @@
 		A3FEFEC01CD3686B00152A39 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A36441A71CFD861A006378C6 /* EventCountModel */,
 				A3FEFEC11CD3687400152A39 /* FakeUser */,
 			);
 			name = Models;
@@ -443,15 +452,6 @@
 				A3FEFEC81CD385F000152A39 /* DetailViewController.m */,
 			);
 			name = DetailViewController;
-			sourceTree = "<group>";
-		};
-		A3FEFECA1CD38AC200152A39 /* SecondDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A3FEFECB1CD38AE200152A39 /* SecondDetailViewController.h */,
-				A3FEFECC1CD38AE200152A39 /* SecondDetailViewController.m */,
-			);
-			name = SecondDetailViewController;
 			sourceTree = "<group>";
 		};
 		D470D1FC220F838E5DA67255 /* Frameworks */ = {
@@ -678,8 +678,8 @@
 				A308EB261CFC021900DCFD91 /* VikeIntegrationKinesis.m in Sources */,
 				A308EB211CFC021900DCFD91 /* VikeIntegration.m in Sources */,
 				A308EB281CFC021900DCFD91 /* VikePayload.m in Sources */,
+				A36441A61CFD84F7006378C6 /* EventCountModel.m in Sources */,
 				A308EB1E1CFC021900DCFD91 /* VikeAnalytics.m in Sources */,
-				A3FEFECD1CD38AE200152A39 /* SecondDetailViewController.m in Sources */,
 				A364417A1CFC8A63006378C6 /* VikeCrashlyticsIntegrationFactory.m in Sources */,
 				A364417E1CFC8A63006378C6 /* VikeGoogleAnalyticsIntegrationFactory.m in Sources */,
 				A308EB2C1CFC021900DCFD91 /* VikeUncaughtExceptionHandler.m in Sources */,

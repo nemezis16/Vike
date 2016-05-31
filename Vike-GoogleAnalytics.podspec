@@ -1,18 +1,18 @@
 Pod::Spec.new do |s|
 
-s.name         = "Vike-Flurry"
+s.name         = "Vike-GoogleAnalytics"
 s.version      = "0.1.4.3"
-s.summary      = "Flurry integration for Vike's' analytics library"
+s.summary      = "Google analytics integration for Vike's' analytics library"
 s.homepage     = "https://github.com/nemezis16/Vike"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author             = { "Roman Osadchuk" => "roman.osadchuk@thinkmobiles.com" }
 s.platform     = :ios, "8.3"
 s.source       = { :git => "https://github.com/nemezis16/Vike.git", :tag => "0.1.4.3" }
-s.source_files  = "VikeFlurry/*.{h,m}"
+s.source_files  = "VikeGoogleAnalytics/*.{h,m}"
 s.requires_arc = true
 
-s.subspec "Flurry" do |ss|
-ss.dependency 'Flurry-iOS-SDK/FlurrySDK', '~> 7.1.0'
+s.subspec "Google/Analytics" do |ss|
+ss.dependency 'Google/Analytics', '~> 3.14'
 end
 
 s.subspec "Vike" do |ss|

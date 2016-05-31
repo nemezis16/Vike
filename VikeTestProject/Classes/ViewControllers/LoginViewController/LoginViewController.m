@@ -41,13 +41,6 @@
     [self configureView];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-     [[VikeAnalytics sharedAnalytics] screen:@"First screen" properties:@{@"screen prop" : @"screen prop"} options:@{VikePayloadKeyIntegrations : @[@"Vike", @"Some integration"]}];
-}
-
 #pragma mark - Actions
 
 - (IBAction)handleRegisterButtonTap:(id)sender
