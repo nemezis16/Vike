@@ -41,6 +41,7 @@ NSString *const VikeQueueKey = @"VikeQueue";
 @property (strong, nonatomic) NSString *userId;
 
 @property (strong, nonatomic) NSTimer *flushTimer;
+
 @property (strong, nonatomic) dispatch_queue_t serialQueue;
 @property (assign, nonatomic) UIBackgroundTaskIdentifier flushTaskID;
 
@@ -141,6 +142,10 @@ NSString *const VikeQueueKey = @"VikeQueue";
     self.exceptionHandler.exceptionCallback = ^(NSDictionary *exceptionDictionary, BOOL *complete) {
         VikeIntegrationEvent *event = [VikeIntegrationEvent new];
         event.type = @"exception";
+        event.projectId = weakSelf.analytics.configuration.writeKey;
+        event.anonymousId = weakSelf.anonymousId;
+        event.userId = weakSelf.userId;
+        event.bundledIntegrations = [weakSelf integrationsDictionary:weakSelf.analytics.bundledIntegrations];
     
         dispatch_async(weakSelf.serialQueue, ^{
             NSMutableDictionary *jsonDictionary = [event.jsonDictionary mutableCopy];
@@ -209,7 +214,8 @@ NSString *const VikeQueueKey = @"VikeQueue";
     __weak typeof(self) weakSelf = self;
     dispatch_sync(dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
-        strongSelf.flushTimer = [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(flush) userInfo:nil repeats:YES];
+        strongSelf.flushTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(flush) userInfo:nil repeats:YES];
+#warning Need to setup time 30.0
     });
 }
 
@@ -232,12 +238,16 @@ NSString *const VikeQueueKey = @"VikeQueue";
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:eventsDictionary options:0 error:&error];
         NSData *gzipData = [jsonData awsgzip_gzippedData];
         
+        NSMutableArray *temporaryEventQueue = [self.eventQueue mutableCopy];
         [[VikeIntegrationKinesis sharedIntegrationKinesis] storeRecords:@[gzipData] withCompletion:^(NSError *error){
             if (completion) {
                 completion();
             }
             if (!error) {
+                NSMutableArray *distinctionArray = [self.eventQueue mutableCopy];
+                [distinctionArray removeObjectsInArray:temporaryEventQueue];
                 [weakSelf clearQueue];
+                self.eventQueue = [distinctionArray mutableCopy];
             }
         }];
     });

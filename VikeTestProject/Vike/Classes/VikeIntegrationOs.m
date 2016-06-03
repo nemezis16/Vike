@@ -20,7 +20,7 @@
     self = [super init];
     if (self) {
         _name = @"iOS";
-        _version = [NSString stringWithFormat:@"%f", [[[UIDevice currentDevice] systemVersion] floatValue]];
+        _version = [NSString stringWithFormat:@"%.2f", [[[UIDevice currentDevice] systemVersion] floatValue]];
     }
     return self;
 }

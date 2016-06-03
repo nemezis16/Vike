@@ -11,6 +11,7 @@
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 #import <sys/sysctl.h>
+#import <sys/utsname.h>
 
 static BOOL AnalyticsLoggerShowLogs = YES;
 
@@ -166,15 +167,14 @@ NSString *GetIPAddress()
 
 NSString *GetDeviceModel()
 {
-    NSString *results = nil;
-    @try {
-        size_t size;
-        sysctlbyname("hw.machine", NULL, &size, NULL, 0);
-        char answer[size];
-        sysctlbyname("hw.machine", answer, &size, NULL, 0);
-        results = @(answer);
-    }
-    @catch (NSException *exception) {
-    }
-    return results;
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    NSString *iOSDeviceModelsPath = [[NSBundle mainBundle] pathForResource:@"iOSDeviceModelMapping" ofType:@"plist"];
+    NSDictionary *iOSDevices = [NSDictionary dictionaryWithContentsOfFile:iOSDeviceModelsPath];
+    
+    NSString *deviceModel = [NSString stringWithCString:systemInfo.machine
+                                               encoding:NSUTF8StringEncoding];
+    
+    return [iOSDevices valueForKey:deviceModel];
 }

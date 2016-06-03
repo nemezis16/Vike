@@ -28,13 +28,9 @@
 		A36441521CFC7A2E006378C6 /* libAWSCognito.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A364414F1CFC7A2E006378C6 /* libAWSCognito.a */; };
 		A36441531CFC7A2E006378C6 /* libAWSCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441501CFC7A2E006378C6 /* libAWSCore.a */; };
 		A36441541CFC7A2E006378C6 /* libAWSKinesis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441511CFC7A2E006378C6 /* libAWSKinesis.a */; };
-		A36441561CFC7A41006378C6 /* libAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441551CFC7A41006378C6 /* libAnalytics.a */; };
 		A364415D1CFC7A54006378C6 /* libFlurry-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441571CFC7A54006378C6 /* libFlurry-iOS-SDK.a */; };
 		A364415E1CFC7A54006378C6 /* libMixpanel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441581CFC7A54006378C6 /* libMixpanel.a */; };
 		A364415F1CFC7A54006378C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36441591CFC7A54006378C6 /* libPods.a */; };
-		A36441601CFC7A54006378C6 /* libSegment-Flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A364415A1CFC7A54006378C6 /* libSegment-Flurry.a */; };
-		A36441611CFC7A54006378C6 /* libSegment-GoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A364415B1CFC7A54006378C6 /* libSegment-GoogleAnalytics.a */; };
-		A36441621CFC7A54006378C6 /* libSegment-Mixpanel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A364415C1CFC7A54006378C6 /* libSegment-Mixpanel.a */; };
 		A36441641CFC7A6F006378C6 /* Vike.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A36441631CFC7A6F006378C6 /* Vike.podspec */; };
 		A36441791CFC8A63006378C6 /* VikeCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441671CFC8A63006378C6 /* VikeCrashlytics.m */; };
 		A364417A1CFC8A63006378C6 /* VikeCrashlyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441691CFC8A63006378C6 /* VikeCrashlyticsIntegrationFactory.m */; };
@@ -45,6 +41,7 @@
 		A364417F1CFC8A63006378C6 /* VikeMixpanelIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441761CFC8A63006378C6 /* VikeMixpanelIntegration.m */; };
 		A36441801CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441781CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m */; };
 		A36441A61CFD84F7006378C6 /* EventCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441A51CFD84F7006378C6 /* EventCountModel.m */; };
+		A36441D51D0030EA006378C6 /* iOSDeviceModelMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = A36441D41D0030EA006378C6 /* iOSDeviceModelMapping.plist */; };
 		A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */ = {isa = PBXBuildFile; fileRef = A390FC6B1CE9B53700FA0BB3 /* DummySession.m */; };
 		A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA41CD34FF000152A39 /* AppDelegate.m */; };
 		A3FEFEAE1CD34FF000152A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA61CD34FF000152A39 /* main.m */; };
@@ -126,6 +123,7 @@
 		A36441781CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeMixpanelIntegrationFactory.m; sourceTree = "<group>"; };
 		A36441A41CFD84F7006378C6 /* EventCountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCountModel.h; path = Classes/Models/EventCountModel/EventCountModel.h; sourceTree = "<group>"; };
 		A36441A51CFD84F7006378C6 /* EventCountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCountModel.m; path = Classes/Models/EventCountModel/EventCountModel.m; sourceTree = "<group>"; };
+		A36441D41D0030EA006378C6 /* iOSDeviceModelMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iOSDeviceModelMapping.plist; sourceTree = "<group>"; };
 		A390FC6A1CE9B53700FA0BB3 /* DummySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummySession.h; path = Classes/DummySession/DummySession.h; sourceTree = "<group>"; };
 		A390FC6B1CE9B53700FA0BB3 /* DummySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummySession.m; path = Classes/DummySession/DummySession.m; sourceTree = "<group>"; };
 		A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VikeTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,10 +163,6 @@
 				A364415D1CFC7A54006378C6 /* libFlurry-iOS-SDK.a in Frameworks */,
 				A364415E1CFC7A54006378C6 /* libMixpanel.a in Frameworks */,
 				A364415F1CFC7A54006378C6 /* libPods.a in Frameworks */,
-				A36441601CFC7A54006378C6 /* libSegment-Flurry.a in Frameworks */,
-				A36441611CFC7A54006378C6 /* libSegment-GoogleAnalytics.a in Frameworks */,
-				A36441621CFC7A54006378C6 /* libSegment-Mixpanel.a in Frameworks */,
-				A36441561CFC7A41006378C6 /* libAnalytics.a in Frameworks */,
 				A36441521CFC7A2E006378C6 /* libAWSCognito.a in Frameworks */,
 				A36441531CFC7A2E006378C6 /* libAWSCore.a in Frameworks */,
 				A36441541CFC7A2E006378C6 /* libAWSKinesis.a in Frameworks */,
@@ -232,6 +226,7 @@
 				A308EB9D1CFC4FC800DCFD91 /* LICENSE */,
 				A308EB9E1CFC4FC800DCFD91 /* README.md */,
 				A308EB9F1CFC4FC800DCFD91 /* Vike.podspec */,
+				A36441D41D0030EA006378C6 /* iOSDeviceModelMapping.plist */,
 			);
 			name = VikeAnalyticsClasses;
 			path = Classes;
@@ -574,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FEFEB01CD34FF000152A39 /* LaunchScreen.storyboard in Resources */,
+				A36441D51D0030EA006378C6 /* iOSDeviceModelMapping.plist in Resources */,
 				A36441641CFC7A6F006378C6 /* Vike.podspec in Resources */,
 				A3FEFEAF1CD34FF000152A39 /* Assets.xcassets in Resources */,
 				A3FEFEB11CD34FF000152A39 /* Main.storyboard in Resources */,
@@ -823,10 +819,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -844,10 +837,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = OR.VikeTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

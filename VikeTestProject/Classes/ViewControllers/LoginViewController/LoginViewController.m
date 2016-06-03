@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 
-#import "VikeAnalytics.h"
 #import "DummySession.h"
 
 #import "FakeUser.h"

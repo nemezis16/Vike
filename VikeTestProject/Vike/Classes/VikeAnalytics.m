@@ -251,7 +251,7 @@ static VikeAnalytics *__sharedInstance = nil;
             id<VikeIntegrationProtocol> integration = [factory createWithSettings:integrationSettings forAnalytics:self];
             if (integration) {
                 self.integrations[key] = integration;
-                self.registeredIntegrations[key] = @NO;
+                self.registeredIntegrations[key] = @YES;
             }
         } else {
             VikeLog(@"No settings for %@. Skipping.", key);
