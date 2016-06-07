@@ -43,6 +43,13 @@
 		A36441A61CFD84F7006378C6 /* EventCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A36441A51CFD84F7006378C6 /* EventCountModel.m */; };
 		A36441D51D0030EA006378C6 /* iOSDeviceModelMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = A36441D41D0030EA006378C6 /* iOSDeviceModelMapping.plist */; };
 		A390FC6C1CE9B53700FA0BB3 /* DummySession.m in Sources */ = {isa = PBXBuildFile; fileRef = A390FC6B1CE9B53700FA0BB3 /* DummySession.m */; };
+		A3BBEEEC1D057029007FE6B8 /* VikeLocalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEEEB1D057029007FE6B8 /* VikeLocalyticsIntegration.m */; };
+		A3BBEEEF1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEEEE1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.m */; };
+		A3BBEEF41D06A7C6007FE6B8 /* VikeAmplitudeIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEEF31D06A7C6007FE6B8 /* VikeAmplitudeIntegration.m */; };
+		A3BBEEF71D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEEF61D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.m */; };
+		A3BBEF031D06BD0A007FE6B8 /* VikeKissmetricsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEF001D06BD0A007FE6B8 /* VikeKissmetricsIntegration.m */; };
+		A3BBEF041D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BBEF021D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.m */; };
+		A3BBEF061D06BE22007FE6B8 /* KISSmetricsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BBEF051D06BE22007FE6B8 /* KISSmetricsSDK.framework */; };
 		A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA41CD34FF000152A39 /* AppDelegate.m */; };
 		A3FEFEAE1CD34FF000152A39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFEA61CD34FF000152A39 /* main.m */; };
 		A3FEFEAF1CD34FF000152A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FEFEA81CD34FF000152A39 /* Assets.xcassets */; };
@@ -126,6 +133,19 @@
 		A36441D41D0030EA006378C6 /* iOSDeviceModelMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iOSDeviceModelMapping.plist; sourceTree = "<group>"; };
 		A390FC6A1CE9B53700FA0BB3 /* DummySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummySession.h; path = Classes/DummySession/DummySession.h; sourceTree = "<group>"; };
 		A390FC6B1CE9B53700FA0BB3 /* DummySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummySession.m; path = Classes/DummySession/DummySession.m; sourceTree = "<group>"; };
+		A3BBEEEA1D057029007FE6B8 /* VikeLocalyticsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VikeLocalyticsIntegration.h; path = VikeLocalytics/VikeLocalyticsIntegration.h; sourceTree = SOURCE_ROOT; };
+		A3BBEEEB1D057029007FE6B8 /* VikeLocalyticsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VikeLocalyticsIntegration.m; path = VikeLocalytics/VikeLocalyticsIntegration.m; sourceTree = SOURCE_ROOT; };
+		A3BBEEED1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VikeLocalyticsIntegrationFactory.h; path = VikeLocalytics/VikeLocalyticsIntegrationFactory.h; sourceTree = SOURCE_ROOT; };
+		A3BBEEEE1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VikeLocalyticsIntegrationFactory.m; path = VikeLocalytics/VikeLocalyticsIntegrationFactory.m; sourceTree = SOURCE_ROOT; };
+		A3BBEEF21D06A7C6007FE6B8 /* VikeAmplitudeIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VikeAmplitudeIntegration.h; path = VikeAmplitude/VikeAmplitudeIntegration.h; sourceTree = SOURCE_ROOT; };
+		A3BBEEF31D06A7C6007FE6B8 /* VikeAmplitudeIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VikeAmplitudeIntegration.m; path = VikeAmplitude/VikeAmplitudeIntegration.m; sourceTree = SOURCE_ROOT; };
+		A3BBEEF51D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VikeAmplitudeIntegrationFactory.h; path = VikeAmplitude/VikeAmplitudeIntegrationFactory.h; sourceTree = SOURCE_ROOT; };
+		A3BBEEF61D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VikeAmplitudeIntegrationFactory.m; path = VikeAmplitude/VikeAmplitudeIntegrationFactory.m; sourceTree = SOURCE_ROOT; };
+		A3BBEEFF1D06BD0A007FE6B8 /* VikeKissmetricsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeKissmetricsIntegration.h; sourceTree = "<group>"; };
+		A3BBEF001D06BD0A007FE6B8 /* VikeKissmetricsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeKissmetricsIntegration.m; sourceTree = "<group>"; };
+		A3BBEF011D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VikeKissmetricsIntegrationFactory.h; sourceTree = "<group>"; };
+		A3BBEF021D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VikeKissmetricsIntegrationFactory.m; sourceTree = "<group>"; };
+		A3BBEF051D06BE22007FE6B8 /* KISSmetricsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KISSmetricsSDK.framework; sourceTree = "<group>"; };
 		A3F6510C1CF2F29000EFD494 /* VikeTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VikeTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F6510E1CF2F29000EFD494 /* VikeTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VikeTestProjectTests.m; sourceTree = "<group>"; };
 		A3F651101CF2F29000EFD494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BBEF061D06BE22007FE6B8 /* KISSmetricsSDK.framework in Frameworks */,
 				A364415D1CFC7A54006378C6 /* libFlurry-iOS-SDK.a in Frameworks */,
 				A364415E1CFC7A54006378C6 /* libMixpanel.a in Frameworks */,
 				A364415F1CFC7A54006378C6 /* libPods.a in Frameworks */,
@@ -175,6 +196,9 @@
 		A308EAF61CFC021900DCFD91 /* Vike */ = {
 			isa = PBXGroup;
 			children = (
+				A3BBEEF81D06BA92007FE6B8 /* VikeKissmetrics */,
+				A3BBEEF11D06A75B007FE6B8 /* VikeAmplitude */,
+				A3BBEEE91D056FAB007FE6B8 /* VikeLocalytics */,
 				A36441651CFC8A63006378C6 /* VikeCrashlytics */,
 				A364416A1CFC8A63006378C6 /* VikeFlurry */,
 				A364416F1CFC8A63006378C6 /* VikeGoogleAnalytics */,
@@ -296,6 +320,40 @@
 				A390FC6B1CE9B53700FA0BB3 /* DummySession.m */,
 			);
 			name = DummySession;
+			sourceTree = "<group>";
+		};
+		A3BBEEE91D056FAB007FE6B8 /* VikeLocalytics */ = {
+			isa = PBXGroup;
+			children = (
+				A3BBEEEA1D057029007FE6B8 /* VikeLocalyticsIntegration.h */,
+				A3BBEEEB1D057029007FE6B8 /* VikeLocalyticsIntegration.m */,
+				A3BBEEED1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.h */,
+				A3BBEEEE1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.m */,
+			);
+			name = VikeLocalytics;
+			sourceTree = "<group>";
+		};
+		A3BBEEF11D06A75B007FE6B8 /* VikeAmplitude */ = {
+			isa = PBXGroup;
+			children = (
+				A3BBEEF21D06A7C6007FE6B8 /* VikeAmplitudeIntegration.h */,
+				A3BBEEF31D06A7C6007FE6B8 /* VikeAmplitudeIntegration.m */,
+				A3BBEEF51D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.h */,
+				A3BBEEF61D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.m */,
+			);
+			name = VikeAmplitude;
+			sourceTree = "<group>";
+		};
+		A3BBEEF81D06BA92007FE6B8 /* VikeKissmetrics */ = {
+			isa = PBXGroup;
+			children = (
+				A3BBEF051D06BE22007FE6B8 /* KISSmetricsSDK.framework */,
+				A3BBEEFF1D06BD0A007FE6B8 /* VikeKissmetricsIntegration.h */,
+				A3BBEF001D06BD0A007FE6B8 /* VikeKissmetricsIntegration.m */,
+				A3BBEF011D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.h */,
+				A3BBEF021D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.m */,
+			);
+			name = VikeKissmetrics;
 			sourceTree = "<group>";
 		};
 		A3F6510D1CF2F29000EFD494 /* VikeTestProjectTests */ = {
@@ -657,24 +715,30 @@
 				A364417C1CFC8A63006378C6 /* VikeFlurryIntegrationFactory.m in Sources */,
 				A3FEFEAE1CD34FF000152A39 /* main.m in Sources */,
 				A308EB241CFC021900DCFD91 /* VikeIntegrationEvent.m in Sources */,
+				A3BBEEF41D06A7C6007FE6B8 /* VikeAmplitudeIntegration.m in Sources */,
 				A364417F1CFC8A63006378C6 /* VikeMixpanelIntegration.m in Sources */,
 				A308EB231CFC021900DCFD91 /* VikeIntegrationDevice.m in Sources */,
 				A36441801CFC8A63006378C6 /* VikeMixpanelIntegrationFactory.m in Sources */,
+				A3BBEEEC1D057029007FE6B8 /* VikeLocalyticsIntegration.m in Sources */,
 				A3FEFEC51CD368D500152A39 /* FakeUser.m in Sources */,
 				A308EB1F1CFC021900DCFD91 /* VikeAnalyticsConfiguration.m in Sources */,
 				A3FEFEAC1CD34FF000152A39 /* AppDelegate.m in Sources */,
 				A3FEFEBA1CD350C900152A39 /* LoginViewController.m in Sources */,
 				A364417B1CFC8A63006378C6 /* VikeFlurryIntegration.m in Sources */,
 				A308EB271CFC021900DCFD91 /* VikeIntegrationOs.m in Sources */,
+				A3BBEEEF1D057088007FE6B8 /* VikeLocalyticsIntegrationFactory.m in Sources */,
 				A308EB201CFC021900DCFD91 /* VikeIdentifyPayload.m in Sources */,
+				A3BBEEF71D06A80D007FE6B8 /* VikeAmplitudeIntegrationFactory.m in Sources */,
 				A3FEFEBE1CD367F400152A39 /* NSString+Utils.m in Sources */,
 				A36441791CFC8A63006378C6 /* VikeCrashlytics.m in Sources */,
 				A308EBA11CFC4FC800DCFD91 /* README.md in Sources */,
 				A364417D1CFC8A63006378C6 /* VikeGoogleAnalyticsIntegration.m in Sources */,
 				A308EB261CFC021900DCFD91 /* VikeIntegrationKinesis.m in Sources */,
 				A308EB211CFC021900DCFD91 /* VikeIntegration.m in Sources */,
+				A3BBEF031D06BD0A007FE6B8 /* VikeKissmetricsIntegration.m in Sources */,
 				A308EB281CFC021900DCFD91 /* VikePayload.m in Sources */,
 				A36441A61CFD84F7006378C6 /* EventCountModel.m in Sources */,
+				A3BBEF041D06BD0A007FE6B8 /* VikeKissmetricsIntegrationFactory.m in Sources */,
 				A308EB1E1CFC021900DCFD91 /* VikeAnalytics.m in Sources */,
 				A364417A1CFC8A63006378C6 /* VikeCrashlyticsIntegrationFactory.m in Sources */,
 				A364417E1CFC8A63006378C6 /* VikeGoogleAnalyticsIntegrationFactory.m in Sources */,
@@ -816,6 +880,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VikeTestProject/Vike",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -834,6 +902,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VikeTestProject/Vike",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VikeTestProject/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

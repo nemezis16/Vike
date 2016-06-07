@@ -18,6 +18,10 @@
 #import "VikeGoogleAnalyticsIntegrationFactory.h"
 #import "VikeCrashlyticsIntegrationFactory.h"
 
+#import "VikeLocalyticsIntegrationFactory.h"
+#import "VikeAmplitudeIntegrationFactory.h"
+#import "VikeKissmetricsIntegrationFactory.h"
+
 static NSString *const ProjectIDString = @"346f23a2740818ecc9f91";
 
 @implementation AppDelegate
@@ -30,9 +34,12 @@ static NSString *const ProjectIDString = @"346f23a2740818ecc9f91";
     [configuration use:[VikeMixpanelIntegrationFactory instance]];
     [configuration use:[VikeGoogleAnalyticsIntegrationFactory instance]];
     [configuration use:[VikeCrashlyticsIntegrationFactory instance]];
+    [configuration use:[VikeLocalyticsIntegrationFactory instance]];
+    [configuration use:[VikeAmplitudeIntegrationFactory instance]];
+    [configuration use:[VikeKissmetricsIntegrationFactory instance]];
     
     [VikeAnalytics setupWithConfiguration:configuration];
-
+    
     return YES;
 }
 

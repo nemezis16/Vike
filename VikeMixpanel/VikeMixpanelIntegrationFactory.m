@@ -19,7 +19,7 @@
     static dispatch_once_t once;
     static VikeMixpanelIntegrationFactory *sharedInstance;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = [[VikeMixpanelIntegrationFactory alloc] init];
     });
     return sharedInstance;
 }

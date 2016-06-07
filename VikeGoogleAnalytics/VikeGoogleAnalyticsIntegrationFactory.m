@@ -20,7 +20,7 @@
     static dispatch_once_t once;
     static VikeGoogleAnalyticsIntegrationFactory *sharedInstance;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = [[VikeGoogleAnalyticsIntegrationFactory alloc] init];
     });
     return sharedInstance;
 }

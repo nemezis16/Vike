@@ -247,7 +247,8 @@ static VikeAnalytics *__sharedInstance = nil;
     for (id<VikeIntegrationFactoryProtocol> factory in self.configuration.factories) {
         NSString *key = [factory key];
         NSDictionary *integrationSettings = [projectSettings objectForKey:key];
-        if (integrationSettings || [key isEqualToString:@"vike"]) {
+#warning hardcoded keys: localytics, amplitude, kissmetrics
+        if (integrationSettings || [key isEqualToString:@"vike"] || [key isEqualToString:@"localytics"] || [key isEqualToString:@"amplitude"] || [key isEqualToString:@"kissmetrics"]) {
             id<VikeIntegrationProtocol> integration = [factory createWithSettings:integrationSettings forAnalytics:self];
             if (integration) {
                 self.integrations[key] = integration;

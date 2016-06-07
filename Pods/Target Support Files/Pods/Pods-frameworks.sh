@@ -82,3 +82,10 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/Localytics/Localytics-iOS-4.0.0/Localytics.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/Localytics/Localytics-iOS-4.0.0/Localytics.framework"
+fi

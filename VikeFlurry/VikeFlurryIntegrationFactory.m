@@ -18,15 +18,9 @@
     static dispatch_once_t once;
     static VikeFlurryIntegrationFactory *sharedInstance;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = [[VikeFlurryIntegrationFactory alloc] init];
     });
     return sharedInstance;
-}
-
-- (id)init
-{
-    self = [super init];
-    return self;
 }
 
 - (id<VikeIntegrationProtocol>)createWithSettings:(NSDictionary *)settings forAnalytics:(VikeAnalytics *)analytics

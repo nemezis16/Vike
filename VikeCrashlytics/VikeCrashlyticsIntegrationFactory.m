@@ -16,7 +16,7 @@
     static dispatch_once_t once;
     static VikeCrashlyticsIntegrationFactory *sharedInstance;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = [[VikeCrashlyticsIntegrationFactory alloc] init];
     });
     return sharedInstance;
 }
