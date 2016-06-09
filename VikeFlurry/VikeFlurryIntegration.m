@@ -25,17 +25,13 @@
     if (self = [super init]) {
         _settings = settings;
         
+        [Flurry setLogLevel:FlurryLogLevelNone];
         NSNumber *sessionContinueSeconds = settings[@"sessionContinueSeconds"];
         if (sessionContinueSeconds) {
-            int s = [sessionContinueSeconds intValue];
             [Flurry setSessionContinueSeconds:[sessionContinueSeconds intValue]];
-            VikeLog(@"Flurry setSessionContinueSeconds:%d", s);
         }
-        
         NSString *apiKey = STR_OR_WS(self.settings[@"credentials"][@"api_key"]);
         [Flurry startSession:apiKey];
-        VikeLog(@"Flurry startSession:%@", apiKey);
-    
     }
     return self;
 }

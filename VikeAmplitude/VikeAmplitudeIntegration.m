@@ -13,6 +13,7 @@
 #import "VikeScreenPayload.h"
 
 #import "VikeAnalytics.h"
+#import "VikeUtils.h"
 
 @implementation VikeAmplitudeIntegration
 
@@ -27,10 +28,8 @@
         if ([(NSNumber *)[self.settings objectForKey:@"trackSessionEvents"] boolValue]) {
             [Amplitude instance].trackingSessionEvents = true;
         }
-        
-#warning hardocded
-//        NSString *apiKey = [self.settings objectForKey:@"apiKey"];
-        [[Amplitude instance] initializeApiKey:@"dda245098434adccfc9b7675ca343c84"];
+        NSString *apiKey = STR_OR_WS(self.settings[@"credentials"][@"api_key"]);
+        [[Amplitude instance] initializeApiKey:apiKey];
     }
     return self;
 }
@@ -61,7 +60,7 @@
         if (!receipt || ![receipt isKindOfClass:[NSString class]]) {
             receipt = nil;
         }
-        NSLog(@"Number : %@", revenue);
+        
         [self.amplitude logRevenue:productId
                           quantity:[quantity integerValue]
                              price:revenue

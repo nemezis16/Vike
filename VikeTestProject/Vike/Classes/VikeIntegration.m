@@ -229,7 +229,6 @@ NSString *const VikeQueueKey = @"VikeQueue";
     __weak typeof(self) weakSelf = self;
     dispatch_async(self.serialQueue, ^{
         if (!weakSelf.eventQueue.count) {
-            VikeLog(@"%@ No queued API calls to flush.", self);
             return;
         }
         NSDictionary *eventsDictionary = @{@"events" : weakSelf.eventQueue};

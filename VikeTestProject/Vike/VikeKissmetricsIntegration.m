@@ -15,6 +15,7 @@
 #import "VikeScreenPayload.h"
 
 #import "VikeAnalytics.h"
+#import "VikeUtils.h"
 
 @implementation VikeKissmetricsIntegration
 
@@ -24,8 +25,9 @@
 {
     if (self = [super init]) {
         _settings = settings;
-#warning hardcoded 
-        [KISSmetricsAPI sharedAPIWithKey:@"25731d072f19e6982adc5913441eb9123054374e"];
+        
+        NSString *apiKey = STR_OR_WS(self.settings[@"credentials"][@"api_key"]);
+        [KISSmetricsAPI sharedAPIWithKey:apiKey];
     }
     return self;
 }

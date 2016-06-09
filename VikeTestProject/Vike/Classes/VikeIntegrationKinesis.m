@@ -38,6 +38,8 @@ static VikeIntegrationKinesis * __sharedInstance;
         
         AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = configuration;
         
+        [AWSLogger defaultLogger].logLevel = AWSLogLevelNone;
+        
         self.writeKey = writeKey;
     }
     return self;

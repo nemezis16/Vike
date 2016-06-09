@@ -247,8 +247,7 @@ static VikeAnalytics *__sharedInstance = nil;
     for (id<VikeIntegrationFactoryProtocol> factory in self.configuration.factories) {
         NSString *key = [factory key];
         NSDictionary *integrationSettings = [projectSettings objectForKey:key];
-#warning hardcoded keys: localytics, amplitude, kissmetrics
-        if (integrationSettings || [key isEqualToString:@"vike"] || [key isEqualToString:@"localytics"] || [key isEqualToString:@"amplitude"] || [key isEqualToString:@"kissmetrics"]) {
+        if (integrationSettings || [key isEqualToString:@"vike"]) {
             id<VikeIntegrationProtocol> integration = [factory createWithSettings:integrationSettings forAnalytics:self];
             if (integration) {
                 self.integrations[key] = integration;
@@ -322,13 +321,8 @@ static VikeAnalytics *__sharedInstance = nil;
 - (void)invokeIntegration:(id<VikeIntegrationProtocol>)integration key:(NSString *)key selector:(SEL)selector arguments:(NSArray *)arguments options:(NSDictionary *)options
 {
     if (![integration respondsToSelector:selector]) {
-        VikeLog(@"Not sending call to %@ because it doesn't respond to %@.", key, NSStringFromSelector(selector));
         return;
     }
-    
-    NSString *eventType = NSStringFromSelector(selector);
-    
-    VikeLog(@"Running: %@ with arguments %@ on integration: %@", eventType, arguments, key);
     
     NSInvocation *invocation = [self invocationForSelector:selector arguments:arguments];
     [invocation invokeWithTarget:integration];
@@ -361,7 +355,6 @@ static VikeAnalytics *__sharedInstance = nil;
 - (void)queueSelector:(SEL)selector arguments:(NSArray *)arguments options:(NSDictionary *)options
 {
     NSArray *obj = @[ NSStringFromSelector(selector), arguments ?: @[], options ?: @{} ];
-    VikeLog(@"Queueing: %@", obj);
     [self.messageQueue addObject:obj];
 }
 

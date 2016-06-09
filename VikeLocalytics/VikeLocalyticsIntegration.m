@@ -24,10 +24,8 @@
 {
     if (self = [super init]) {
         _settings = settings;
-#warning  hardcoded
-        NSString *apiKey = @"b88b88fb6548b5d71cb160b-05ce8214-2bbc-11e6-44da-00adad38bc8d";
-        //NSString *apiKey = STR_OR_WS(self.settings[@"credentials"][@"api_key"]);
-        [Localytics autoIntegrate:apiKey launchOptions:nil];
+        NSString *appKey = STR_OR_WS(self.settings[@"credentials"][@"app_key"]);
+        [Localytics autoIntegrate:appKey launchOptions:nil];
     }
     return self;
 }
